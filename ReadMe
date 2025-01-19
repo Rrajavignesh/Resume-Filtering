@@ -1,0 +1,22 @@
+first step is create a virtual environment ---> python -m venv env (env-- is user preferable)
+next activate a environment ---> .\env\Scripts\activate
+next we can install what are the library we want.
+
+Python 3.9.6
+Flask 2.0.1
+Werkzeug 2.0.1
+
+1.pip install flask
+  Flask is an open source micro-framework for python.
+  It does not require particular tools are libraries.
+  It hos no database abstraction layer, form validation, or any other components.
+
+  The micro-framework flask is based on the pocoo projects.
+        ..Web server gateway interface(WSGI)
+        ..jinja template engine.
+
+2. render_template
+    This is run under jinja engine.
+    And it's used for add a html page.
+3. request  
+    This is used to get a data from an user.
