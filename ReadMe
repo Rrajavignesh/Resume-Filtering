@@ -20,3 +20,16 @@ Werkzeug 2.0.1
     And it's used for add a html page.
 3. request  
     This is used to get a data from an user.
+-----------------------------------------------------------------------------------------------------
+                                      GIT 
+
+1. git init ---> it is used to initialize a git
+2. git status ---> it is used to check the status
+3. git add . ---> it is select all the your local files
+4. git commit -m "commit message" --->commit the git
+5. git remote add origin git@github.com:Rrajavignesh/Resume-Filtering.git ---> get a link form your repo
+6. git branch ---> it will show your branch and note it.
+7. git branch -M main ---> it will change a branch as main
+8. git push origin branch_name ---> it will push your all the code in git
+
+-----------------------------------------------------------------------------------------------------
