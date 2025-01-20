@@ -3,24 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form submited</title>
+    <title>Form Submitted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        h3 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        p {
+            color: #555;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h3>Form submited</h3>
-    <p>Thank you for submitting the form</p>
-    <table>
-        <tr>
-            <td>Username</td>
-            <td>{{username}}</td>
-        </tr>
-        <tr>
-            <td>Password</td>
-            <td>{{password}}</td>
-        </tr>
-        <tr>
-            <td>Confirm Password</td>
-            <td>{{confirm_password}}</td>
-        </tr>
-    </table>
+    <div class="container">
+        <h3>Form Submitted</h3>
+        <p>Thank you for submitting the form</p>
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>{{username}}</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>{{password}}</td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>{{confirm_password}}</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
