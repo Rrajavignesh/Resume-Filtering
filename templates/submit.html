@@ -7,59 +7,63 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
+            animation: backgroundAnimation 15s ease-in-out infinite;
         }
         .container {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             max-width: 500px;
             width: 100%;
             text-align: center;
+            animation: fadeIn 1.5s ease;
+            margin-bottom: 20px;
         }
         h3 {
             color: #4CAF50;
             margin-top: 0;
+            animation: fadeIn 2s ease;
         }
         p {
             color: #555;
+            animation: fadeIn 2.5s ease;
         }
-        table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
+        iframe {
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+            width: 850px;
+            height: 450px;
+            border: 0;
         }
-        td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            color: #333;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes backgroundAnimation {
+            0% { background-color: #f0f8ff; }
+            50% { background-color: #add8e6; }
+            100% { background-color: #f0f8ff; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h3>Form Submitted</h3>
+        <h4>{{username}}</h4>
         <p>Thank you for submitting the form</p>
-        <table>
-            <tr>
-                <td>Username</td>
-                <td>{{username}}</td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>{{password}}</td>
-            </tr>
-            <tr>
-                <td>Confirm Password</td>
-                <td>{{confirm_password}}</td>
-            </tr>
-        </table>
     </div>
+    <iframe
+        src="https://usmanyousaf-resume-filter-app.hf.space"
+    ></iframe>
 </body>
 </html>
